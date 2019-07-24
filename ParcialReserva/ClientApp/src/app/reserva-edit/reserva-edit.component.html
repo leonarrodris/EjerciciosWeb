@@ -1,0 +1,30 @@
+<div *ngIf="reserva">
+  <div >
+  <h1 class="h2">Detalle Reserva</h1>
+  </div>
+  <p>Editar/Eliminar Reservas</p>
+  <div class="form-group">
+  <label>Identificacion:
+  {{reserva.Identificacion}}
+  </label>
+  </div>
+  <div class="form-group">
+  <label>Nombre:
+  <input [(ngModel)]="reserva.Nombre" class="form-control" placeholder="Digite Nombre" type="text"/>
+  </label>
+  </div>
+  <div class="form-group">
+  <label>N° Sillas:
+  <input [(ngModel)]="reserva.NSillas" class="form-control" placeholder="digite N° Sillas " type="text" />
+  </label>
+  </div>
+  <div class="form-group">
+  <label>Tipo:
+  <input type="checkbox" class="form-control" [(ngModel)]="reserva.Tipo">
+  </label>
+  </div>
+  <div class="form-group">
+  <button (click)="update()" class="btn btn-primary">Actualizar</button>
+  <button (click)="delete()" class="btn btn-primary">Eliminar</button>
+  </div>
+  </div>

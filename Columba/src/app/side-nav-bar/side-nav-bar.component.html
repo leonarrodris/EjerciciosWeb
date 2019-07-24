@@ -1,0 +1,53 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="side"[(opened)]="opened" >
+       <div>  
+          <span mat-flat-button [matMenuTriggerFor]="appMenuAlmacen"> 
+            Almacen
+          </span>
+        </div>  
+        
+        <div>
+          <span mat-flat-button [matMenuTriggerFor]="appMenuCompras">
+            Compras
+          </span>
+        </div>
+
+        <div> 
+          <span mat-flat-button [matMenuTriggerFor]= "appMenuVentas">
+            Ventas
+          </span>
+        </div>
+        <div>
+            <span mat-flat-button [matMenuTriggerFor]="appMenuInventario">
+              Inventario
+            </span>
+        </div>
+        
+    </mat-sidenav>
+  <mat-sidenav-content>
+    <button (click)="opened=!opened"> Toogle Opened </button>
+    <app-articulo> </app-articulo>
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>
+
+<mat-menu #appMenuCompras="matMenu"> 
+    <button mat-menu-item>Ingresos</button>
+    <button mat-menu-item>Proveedores</button>
+    
+</mat-menu>
+<mat-menu #appMenuVentas="matMenu">
+  <button mat-menu-item>Ventas</button>
+  <button mat-menu-item>Clientes</button>
+</mat-menu>
+
+<mat-menu #appMenuInventario="matMenu">
+    <button mat-menu-item>Stock </button>
+    <button mat-menu-item>Inf. Compras </button>
+    <button mat-menu-item>Inf. Ventas</button>
+  </mat-menu>
+<mat-menu #appMenuAlmacen="matMenu"> 
+    <button mat-menu-item>Articulo</button> 
+    <button mat-menu-item>Presentacion </button>
+    <button mat-menu-item>Categoria</button>
+  </mat-menu>

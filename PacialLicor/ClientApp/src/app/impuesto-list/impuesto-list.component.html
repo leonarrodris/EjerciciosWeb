@@ -1,0 +1,22 @@
+<div >
+    <h1 class="h2">List</h1>
+    </div>
+    <div>
+    <table class='table table-striped'>
+    <thead>
+    <tr>
+    <tr>
+    <th>N° Liquidacion</th>
+    <th>Nombre Producto</th>
+    <th>Grados de Alcohol</th>
+    <th>Total a Pagar</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let impuesto of impuestos">
+    <td>{{impuesto.id}}</td>
+    <td>{{impuesto.NProducto}}</td>
+    <td>{{impuesto.GAlcohol}}</td>
+    <td>{{impuesto.ValorPagar}}</td>
+    </tr>
+    </table>
+    </div>

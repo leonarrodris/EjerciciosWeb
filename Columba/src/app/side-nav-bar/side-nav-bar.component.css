@@ -1,0 +1,19 @@
+mat-sidenav-container
+{
+    height: 100%;
+    
+}
+
+mat-sidenav, mat-sidenav-content {
+    padding: 16px;
+}
+
+span{
+    padding-right: 1rem; font-family: Times 'Courier New'; font-size: 20px;
+}
+
+mat-sidenav
+{
+    background-color:  rgb(143, 164, 223);
+    width: 200px;
+}

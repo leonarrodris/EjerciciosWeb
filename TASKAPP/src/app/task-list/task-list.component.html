@@ -1,0 +1,27 @@
+<p>
+  task-list works!
+</p>
+<div>
+  <h1 clas="h2">List</h1>
+</div>
+<div>
+  <table border="1">
+    <tr>
+      <th>Titulo</th>
+      <th>Descripcion</th>
+      <th>Prioridad</th>
+      <th>Editar</th>
+      <th>Eliminar</th>
+    </tr>
+
+    <tr *ngFor="let task of tasks">
+      <td>{{task.title}}</td>
+      <td>{{task.description}}</td>
+      <td> <span *ngIf="task.priority==true;"> <b>Prioridad</b></span> </td>
+      <td>Editar</td>
+      <td>Eliminar</td>
+    </tr>
+  </table>
+
+
+</div>

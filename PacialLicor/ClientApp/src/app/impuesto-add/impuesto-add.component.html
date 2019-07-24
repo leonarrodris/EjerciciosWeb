@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Task Add </h1>
+    </div>
+    <p>Aplicación para agregar Impuestos de Licores</p>
+    <div class="form-group">
+    <label>Id:
+    <input [(ngModel)]="impuesto.id" class="form-control" placeholder="Digite el N° Liquidacion" type=“number"/>
+    </label>
+    </div>
+    <div class="form-group">
+    <label>Nombre Producto:
+    <input [(ngModel)]="impuesto.NProducto" class="form-control" placeholder="Digite Nombre del Producto" type="text"/>
+    </label>
+    </div>
+    <div class="form-group">
+    <label>Grados de Alcohol:
+    <input [(ngModel)]="impuesto.GAlcohol" class="form-control" placeholder="Digite los grados de Alcohol " type="text" />
+    </label>
+    <div class="form-group">
+    <button (click)="add()" class="btn btn-primary">Agregar</button>
+    </div>

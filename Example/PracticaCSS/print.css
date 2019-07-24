@@ -1,0 +1,10 @@
+h1 { color: rgb(255, 0, 34);  font-family: Arial;   font-size: large;  }
+h2 { color: rgb(218, 21, 14);  font-family: Arial;   font-size: large;  }
+h3 { color: rgb(255, 0, 140);  font-family: Arial;   font-size: large;  }
+
+p  { color: rgb(69, 36, 129); font-family: Times 'Courier New'; font-size: medium; }
+
+.EstiloEspecial
+{
+    color: aliceblue; font-family: 'Courier New', Courier, monospace; font-size: 12px
+}

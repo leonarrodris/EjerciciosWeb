@@ -1,0 +1,66 @@
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+      <mat-tab-group> 
+        <mat-tab label="Nuevo Articulo"> 
+            <form>
+                <div class="form-group">
+                  <label for="articulo">Nombre Articulo:</label>
+                  <input type="articulo" class="form-control" id="articulo" placeholder="Enter articulo" name="articulo">
+                </div>
+                <div class="form-group">
+                  <label for="detalle">Detalle:</label>
+                  <input type="detalle" class="form-control" id="detalle" placeholder="Enter detalle" name="detalle">
+                </div>
+        
+                <div class="button">
+                    <button type="submit">Registrar</button>
+                </div>
+              </form>
+          
+        </mat-tab>
+        <mat-tab label="Registros De Articulos "> 
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Articulo</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </mat-tab>
+      </mat-tab-group>
+</body>
+
+
+
